@@ -28,37 +28,42 @@
                      <div>
                         <h1>Customize your Blue 24-inch iMac with Apple M1 chip</h1>
                         <p>Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English.</p>
-                        <h5 class="fw-bold mt-5">Memory</h5>
-                        <button class="btn btn-outline-secondary">8GB unified memory</button>
-                        <button class="btn btn-outline-secondary">16GB unified memory</button>
-                        <h5 class="fw-bold mt-5">Storage</h5>
-                        <button class="btn btn-outline-secondary">256GB SSD storage</button>
-                        <button class="btn btn-outline-secondary">512GB SSD storage</button>
-                        <button class="btn btn-outline-secondary">1TB SSD storage</button>
-                        <h5 class="fw-bold mt-5 mb-2">Choose your delivery option</h5>
-                        <button class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime Delivery</button>
-                        <button class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                        <h5 class="fw-bold mt-4">Memory</h5>
+                        <button id="firstUnified-memory" class="btn btn-outline-secondary">8GB unified memory</button>
+                        <button id="secondUnified-memory" class="btn btn-outline-secondary">16GB unified memory</button>
+                        <h5 class="fw-bold mt-4">Storage</h5>
+                        <button id="ssd-storageOne" class="btn btn-outline-secondary">256GB SSD storage</button>
+                        <button id="ssd-storageTwo" class="btn btn-outline-secondary">512GB SSD storage</button>
+                        <button id="ssd-storageThree" class="btn btn-outline-secondary">1TB SSD storage</button>
+                        <h5 class="fw-bold mt-4 mb-2">Choose your delivery option</h5>
+                        <button id="late-delivery" class="btn btn-outline-secondary">Friday, Aug 25 FREE Prime Delivery</button>
+                        <button id="fast-delivery" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
                      </div>
-                     <div class="d-flex border-bottom w-50 justify-content-between fw-bold mt-5">
-                         <p>Best price</p>
-                         <p>$1299</p>
-                     </div>
-                     <div class="d-flex border-bottom w-50 justify-content-between fw-bold">
-                         <p>Extra Memory Cost</p>
-                         <p>$0</p>
-                     </div>
-                     <div class="d-flex border-bottom w-50 justify-content-between fw-bold">
-                         <p>Extra Storage Cost</p>
-                         <p>$0</p>
-                     </div>
-                     <div class="d-flex w-50 justify-content-between fw-bold bottom-weight">
-                         <p>Delivery charge</p>
-                         <p>$0</p>
-                     </div>
-                     <div class="d-flex w-50 justify-content-between fw-bold mb-5">
-                         <p>Total Price</p>
-                         <p>$1299</p>
-                     </div>
+                     <!-- pricing table  -->
+                     <table class="table w-50 fw-bold mt-4">
+                        <tbody>
+                          <tr>
+                            <td>Best price</td>
+                            <td>$1299</td>
+                          </tr>
+                          <tr>
+                            <td>Extra Memory Cost</td>
+                            <td>$<span id="memory-cost">0</span></td>
+                          </tr>
+                          <tr>
+                            <td>Extra Storage Cost</td>
+                            <td>$<span id="storage-cost">0</span></td>
+                          </tr>
+                          <tr class="bottom-weight">
+                            <td>Delivery charge</td>
+                            <td>$<span id="delivery-cost">0</span></td>
+                          </tr>
+                          <tr>
+                            <td>Total Price</td>
+                            <td>$1299</td>
+                          </tr>
+                        </tbody>
+                      </table>
                      <p>Add Pomo code</p>
                      <input type="text">
                      <button class="btn btn-danger btn-sm">Apply</button>
@@ -67,6 +72,7 @@
             <hr>
         </section>
     </main>
+    
     <!-- main end -->
 
     <!-- footer start -->
