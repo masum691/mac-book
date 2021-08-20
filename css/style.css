@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.bottom-weight{
+    border-bottom: 2px solid rgb(73, 72, 72);
+}
